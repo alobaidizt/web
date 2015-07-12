@@ -6,8 +6,8 @@ p#slide1_controls {
   cursor:pointer;
 }
 #slide1_container {
-  width:450px;
-  height:281px;
+  /*width:450px;*/
+  height:1700px;
   overflow:hidden;
   margin:0 auto;
 }
