@@ -1,3 +1,7 @@
+body {
+  background-color: grey;
+}
+
 p#slide1_controls {
   text-align:center;
 }
