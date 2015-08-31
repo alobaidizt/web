@@ -25,7 +25,7 @@ function deviceOrientationHandler(tiltLR, tiltFB, dir) {
     document.getElementById("doTiltFB").innerHTML =     Math.round(tiltFB);
     document.getElementById("doDirection").innerHTML =  Math.round(dir);
      console.log(beta);
-    if (beta > 170 && beta < 190) {
+    if (beta > -80 && beta < -70) {
      status = "ready!";
      console.log(status);
     } else if (beta > 0  && beta < 10) {
