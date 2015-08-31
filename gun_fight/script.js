@@ -21,29 +21,20 @@ var TLpos;
 function deviceOrientationHandler(tiltLR, tiltFB, dir) {
     var beta = Math.round(tiltFB);
     var status = "";
-    var sound1 = new Audio("audio/flashBang.mp3");
-    var sound2 = new Audio("audio/LoudBang.mp3");
     document.getElementById("doTiltLR").innerHTML =     Math.round(tiltLR);
     document.getElementById("doTiltFB").innerHTML =     Math.round(tiltFB);
     document.getElementById("doDirection").innerHTML =  Math.round(dir);
      console.log(beta);
     if (beta > -80 && beta < -70) {
      status = "ready!";
-     console.log(status);
     } else if (beta > 0  && beta < 10) {
      status = "BANG!!";
-     console.log(status);
      document.getElementById("sound").play();
-     sound1.play();
     }
     document.getElementById("status").innerHTML =  status;
 
+}
 
-    // Apply the transform to the image
-    var leaf = document.getElementById("imgLeaf");
-    leaf.style.webkitTransform =
-      "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
-    leaf.style.MozTransform = "rotate("+ tiltLR +"deg)";
-    leaf.style.transform =
-      "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
+function playSound() {
+  document.getElementById("sound").play();
 }
