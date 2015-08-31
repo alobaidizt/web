@@ -21,6 +21,8 @@ var TLpos;
 function deviceOrientationHandler(tiltLR, tiltFB, dir) {
     var beta = Math.round(tiltFB);
     var status = "";
+    var sound1 = new Audio("audio/flashBang.mp3");
+    var sound2 = new Audio("audio/loudBang.mp3");
     document.getElementById("doTiltLR").innerHTML =     Math.round(tiltLR);
     document.getElementById("doTiltFB").innerHTML =     Math.round(tiltFB);
     document.getElementById("doDirection").innerHTML =  Math.round(dir);
@@ -30,6 +32,8 @@ function deviceOrientationHandler(tiltLR, tiltFB, dir) {
      console.log(status);
     } else if (beta > 0  && beta < 10) {
      status = "BANG!!";
+     sound1.play();
+     sleep(1000);
      console.log(status);
     }
     document.getElementById("status").innerHTML =  status;
