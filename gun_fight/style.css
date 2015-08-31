@@ -1,0 +1,26 @@
+body {
+  background-color: grey;
+}
+
+p#slide1_controls {
+  text-align:center;
+}
+#slide1_controls span {
+  padding-right:2em;
+  cursor:pointer;
+}
+#slide1_container {
+  /*width:450px;*/
+  height:1700px;
+  overflow:hidden;
+  margin:0 auto;
+}
+#slide1_images {
+  position:relative;
+  width:1800px;
+}
+#slide1_images img {
+  padding:0;
+  margin:0;
+  float:left;
+}
