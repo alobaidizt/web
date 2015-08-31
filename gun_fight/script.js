@@ -22,7 +22,7 @@ function deviceOrientationHandler(tiltLR, tiltFB, dir) {
     var beta = Math.round(tiltFB);
     var status = "";
     var sound1 = new Audio("audio/flashBang.mp3");
-    var sound2 = new Audio("audio/loudBang.mp3");
+    var sound2 = new Audio("audio/LoudBang.mp3");
     document.getElementById("doTiltLR").innerHTML =     Math.round(tiltLR);
     document.getElementById("doTiltFB").innerHTML =     Math.round(tiltFB);
     document.getElementById("doDirection").innerHTML =  Math.round(dir);
