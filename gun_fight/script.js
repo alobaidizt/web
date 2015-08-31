@@ -32,9 +32,9 @@ function deviceOrientationHandler(tiltLR, tiltFB, dir) {
      console.log(status);
     } else if (beta > 0  && beta < 10) {
      status = "BANG!!";
-     sound1.play();
-     sleep(1000);
      console.log(status);
+     document.getElementById("sound").play();
+     sound1.play();
     }
     document.getElementById("status").innerHTML =  status;
 
