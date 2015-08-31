@@ -38,19 +38,6 @@ function deviceOrientationHandler(tiltLR, tiltFB, dir) {
     }
     document.getElementById("status").innerHTML =  status;
 
-    TLpos = parseInt(document.getElementById("slide1_images").style.left);
-    if (TLpos > 180) 
-    {
-      sign = 1;
-    } 
-    else 
-    {
-      sign = -1;
-    }
-
-    // Apply change to slide 
-    var imageSlide = document.getElementById("slide1_images");
-    imageSlide.style.left = sign*(dir/360)*1800 + "px";
 
     // Apply the transform to the image
     var leaf = document.getElementById("imgLeaf");
