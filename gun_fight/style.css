@@ -1,5 +1,12 @@
-body {
-  background-color: grey;
+.bg {
+  /*background-color: grey;*/
+  background: url("images/gunFight.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
 }
 
 p#slide1_controls {

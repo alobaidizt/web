@@ -1,32 +1,34 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 
-<div class="main">
-  <h2>Device Orientation</h2>
-  <table>
-    <tr>
-      <td>Event Supported</td>
-      <td id="doEvent"></td>
-    </tr>
-    <tr>
-      <td>Tilt Left/Right [gamma]</td>
-      <td id="doTiltLR"></td>
-    </tr>
-    <tr>
-      <td>Tilt Front/Back [beta]</td>
-      <td id="doTiltFB"></td>
-    </tr>
-    <tr>
-      <td>Direction [alpha]</td>
-      <td id="doDirection"></td>
-    </tr>
-    <tr>
-      <td>Status</td>
-      <td id="status"></td>
-    </tr>
-   </table>
-</div>
+<!--<div class="bg">-->
+  <div class="main">
+    <h2>Device Orientation</h2>
+    <table>
+      <tr>
+        <td>Event Supported</td>
+        <td id="doEvent"></td>
+      </tr>
+      <tr>
+        <td>Tilt Left/Right [gamma]</td>
+        <td id="doTiltLR"></td>
+      </tr>
+      <tr>
+        <td>Tilt Front/Back [beta]</td>
+        <td id="doTiltFB"></td>
+      </tr>
+      <tr>
+        <td>Direction [alpha]</td>
+        <td id="doDirection"></td>
+      </tr>
+      <tr>
+        <td>Status</td>
+        <td id="status"></td>
+      </tr>
+     </table>
+  </div>
 
-<button onclick="playSound()">Click me</button>
+  <button onclick="playSound()">Click me</button>
+<!--</div>-->
 
 <audio id="sound" src="audio/flashBang.mp3"></audio>
 
