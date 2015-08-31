@@ -19,9 +19,17 @@ if (window.DeviceOrientationEvent) {
 }
 var TLpos;
 function deviceOrientationHandler(tiltLR, tiltFB, dir) {
+    var beta = Math.round(tiltFB);
+    var status;
     document.getElementById("doTiltLR").innerHTML =     Math.round(tiltLR);
     document.getElementById("doTiltFB").innerHTML =     Math.round(tiltFB);
     document.getElementById("doDirection").innerHTML =  Math.round(dir);
+    if (beta > 170 && beta < 190) {
+     status = "ready!";
+    } else if (beta > 0  && beta < 10) {
+     status = "BANG!!";
+    }
+    document.getElementById("status").innerHTML =  status;
 
     TLpos = parseInt(document.getElementById("slide1_images").style.left);
     if (TLpos > 180) 
